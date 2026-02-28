@@ -6,7 +6,7 @@
     <!-- Include the CheerpJ loader script -->
     <script src="https://cjrtnc.leaningtech.com/4.2/loader.js"></script>
 </head>
-<body>
+<body onload="runJar();">
     <!-- The display area for graphical Java applications -->
     <div id="cheerpj_display"></div>
 
@@ -24,7 +24,7 @@
             // However, for consistency, the /app/ mount point usually refers to the root
             // of your web server hosting the HTML page.
             // For a truly external URL, ensure the server supports Range requests.
-            const jarUrl = "https://example.com/path/to/your/application.jar"; // Replace with your URL
+            const jarUrl = "https://github.com/Kids-Creator-Products/Minecraft-web-edition/releases/download/Java/ATLauncher.jar"; // Replace with your URL
             const exitCode = await cheerpjRunJar(jarUrl);
             console.log("Application exited with code: " + exitCode);
         }
